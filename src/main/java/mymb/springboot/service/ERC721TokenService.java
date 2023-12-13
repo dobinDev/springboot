@@ -48,7 +48,7 @@ public class ERC721TokenService {
     }
 
     // 데이터 생성
-    public ERC721TokenDTO createToken(ERC721TokenDTO tokenDTO) throws Exception {
+    public ERC721TokenDTO createToken(ERC721TokenDTO tokenDTO) {
         // ERC721TokenDTO를 ERC721Token 엔터티로 변환
         ERC721Token newToken = mapDTOToEntity(tokenDTO);
 
