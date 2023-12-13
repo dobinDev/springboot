@@ -1,0 +1,25 @@
+server:
+  port: 80
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot
+    username: "root"
+    password: "0000"
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      show_sql: true
+      format_sql: true
+      default_batch_fetch_size: 1000
+      dialect: org.hibernate.dialect.MySQL8Dialect
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  thymeleaf:
+    cache: false
